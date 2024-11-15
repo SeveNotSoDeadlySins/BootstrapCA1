@@ -169,37 +169,10 @@
 
 .containerRelative {
   position: relative;
-  display: flex;
-  height: 1084px;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  min-height: 100px;
-}
-
-.paralleximg {
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 700px;
   width: 100%;
-  pointer-events: none;
-}
-
-.parallextext {
-  position: absolute;
-  font-size: 5em;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.parallexsec {
-  position: relative;
-  background: #003329;
-  padding: 100px;
-}
-
-.parallex-gradient {
-  background: linear-gradient(to bottom, #003329, #ffffff);
+  background-color: #12a05c;
+  margin: 0 auto;
 }
 
 /*!
@@ -282,7 +255,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: #003329;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
