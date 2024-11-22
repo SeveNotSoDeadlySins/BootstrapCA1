@@ -167,16 +167,6 @@
   background-color: #2a2e33;
 }
 
-.containerRelative {
-  position: relative;
-  display: flex;
-  height: 1084px;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  min-height: 100px;
-}
-
 .paralleximg {
   position: absolute;
   top: 0;
