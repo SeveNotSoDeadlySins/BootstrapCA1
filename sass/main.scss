@@ -28,15 +28,15 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     }
 };
 
-.containerRelative {
-    position: relative;    
-    display: flex;  
-    height: 1061px;           
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    min-height: 300px;
-}
+$container: (
+    position: relative,    
+    display: flex,  
+    height: 1084px,           
+    justify-content: center,
+    align-items: center,
+    overflow: hidden,
+    min-height: 100px
+);
 
 .paralleximg {
     position: absolute;

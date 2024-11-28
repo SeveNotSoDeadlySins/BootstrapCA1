@@ -167,6 +167,7 @@
   background-color: #2a2e33;
 }
 
+<<<<<<< HEAD
 .containerRelative {
   position: relative;
   display: flex;
@@ -177,6 +178,8 @@
   min-height: 300px;
 }
 
+=======
+>>>>>>> e4d9ad9b20f9c29de99a1eb3f9a64323b847b8e1
 .paralleximg {
   position: absolute;
   top: 0;
