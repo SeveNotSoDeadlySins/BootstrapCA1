@@ -31,11 +31,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .containerRelative {
     position: relative;    
     display: flex;  
-    height: 1084px;           
+    height: 1061px;           
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    min-height: 100px;
+    min-height: 300px;
 }
 
 .paralleximg {
