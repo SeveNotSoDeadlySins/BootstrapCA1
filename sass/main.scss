@@ -18,7 +18,6 @@ $custom-colors: (
     "tertiary-dark": rgb(53, 1, 53)
 );
 
-
 $theme-colors: map-merge($theme-colors, $custom-colors);
 @each $color, $value in $colors {
     .bg.-#{color}{
@@ -48,63 +47,53 @@ $custom-heights: (
       }
     }
   }
-  
 @include generate-heights($custom-heights);
 
 
-@mixin make-container($padding-x: $container-padding-x, $h: 1084px, $overflow-y-hidden) {
+@mixin make-container($padding-x: $container-padding-x, $h: 1084px) {
     width: 100%;
+    background-color: red;
     padding-right: $padding-x;
     padding-left: $padding-x;
     margin-left: auto;
     margin-right: auto;
     height: $h;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
     display: flex;
+    overflow: hidden;
+    position: relative;
 }
 
 .custom-container {
     @include make-container();
 }
 
-$container-xxl: (
-    position: relative,    
-    display: flex,  
-    height: 1084px,           
-    justify-content: center,
-    align-items: center,
-    overflow: hidden,
-    min-height: 100px
-);
-
-
-
-.paralleximg {
+@mixin make-parallax-img() {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     pointer-events: none;
+    object-fit: cover; /* Ensures the image covers the container */
 }
 
-.parallextext {
+.paralleximg {
+    @include make-parallax-img();
+}
+
+@mixin make-parallax-text() {
     position: absolute;
     font-size: 5em;
     color: #ffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 }
 
-.parallexsec {
-    position: relative;
-    background: #003329;
-    padding: 100px;
+.parallextext {
+    @include make-parallax-text();
 }
 
-.parallex-gradient {
-    background: linear-gradient(to bottom, #003329, #ffffff);
-}
 
 
 
