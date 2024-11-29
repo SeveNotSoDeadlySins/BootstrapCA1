@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.test-class {
+  color: red;
+}
+
 .bg.-color {
   background-color: #0d6efd;
 }
@@ -167,19 +171,39 @@
   background-color: #2a2e33;
 }
 
-<<<<<<< HEAD
-.containerRelative {
-  position: relative;
-  display: flex;
-  height: 1061px;
+.h-25 {
+  height: 25%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-1084 {
+  height: 1084px;
+}
+
+.custom-container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1084px;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  min-height: 300px;
+  display: flex;
 }
 
-=======
->>>>>>> e4d9ad9b20f9c29de99a1eb3f9a64323b847b8e1
 .paralleximg {
   position: absolute;
   top: 0;

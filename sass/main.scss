@@ -5,6 +5,10 @@ $primary: green;
 $gradient: #003329;
 $h2white: #fcfcfc;
 
+.test-class {
+    color: red; // Add a test class to verify compilation
+}
+
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
@@ -28,7 +32,44 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     }
 };
 
-$container: (
+$custom-heights: (
+  h-25: 25%,
+  h-50: 50%,
+  h-75: 75%,
+  h-100: 100%,
+  h-1084: 1084px
+);
+
+
+@mixin generate-heights($heights) {
+    @each $key, $value in $heights {
+      .#{$key} {
+        height: $value;
+      }
+    }
+  }
+  
+@include generate-heights($custom-heights);
+
+
+@mixin make-container($padding-x: $container-padding-x, $h: 1084px, $overflow-y-hidden) {
+    width: 100%;
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+    margin-left: auto;
+    margin-right: auto;
+    height: $h;
+    justify-content: center;
+    align-items: center;
+    
+    display: flex;
+}
+
+.custom-container {
+    @include make-container();
+}
+
+$container-xxl: (
     position: relative,    
     display: flex,  
     height: 1084px,           
@@ -37,6 +78,8 @@ $container: (
     overflow: hidden,
     min-height: 100px
 );
+
+
 
 .paralleximg {
     position: absolute;
