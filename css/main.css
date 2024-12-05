@@ -187,6 +187,10 @@
   height: 100%;
 }
 
+.h-900 {
+  height: 950px;
+}
+
 .h-1084 {
   height: 1084px;
 }
@@ -200,8 +204,117 @@
   height: 1084px;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   display: flex;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 540px) {
+  .custom-container {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media (max-width: 720px) {
+  .custom-container {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media (max-width: 960px) {
+  .custom-container {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media (max-width: 1140px) {
+  .custom-container {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media (max-width: 1320px) {
+  .custom-container {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media (max-width: 576px) {
+  .custom-container {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.parallexTitle {
+  position: absolute;
+  font-size: 5em;
+  color: white;
+  top: 60;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.parallexText {
+  position: absolute;
+  font-size: 2em;
+  width: 40%;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
 .paralleximg {
@@ -210,13 +323,6 @@
   left: 0;
   width: 100%;
   pointer-events: none;
-}
-
-.parallextext {
-  position: absolute;
-  font-size: 5em;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .parallexsec {
