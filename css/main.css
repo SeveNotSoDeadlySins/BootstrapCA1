@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.test-class {
-  color: red;
-}
-
 .bg.-color {
   background-color: #0d6efd;
 }
@@ -195,9 +191,56 @@
   height: 1084px;
 }
 
+.h-350 {
+  height: 350px;
+}
+
+.top-0 {
+  top: 0%;
+}
+
+.top-10 {
+  top: 10%;
+}
+
+.top-20 {
+  top: 20%;
+}
+
+.top-30 {
+  top: 30%;
+}
+
+.top-40 {
+  top: 40%;
+}
+
+.top-50 {
+  top: 50%;
+}
+
+.top-60 {
+  top: 60%;
+}
+
+.top-70 {
+  top: 70%;
+}
+
+.top-80 {
+  top: 80%;
+}
+
+.top-90 {
+  top: 90%;
+}
+
+.top-100 {
+  top: 100%;
+}
+
 .custom-container {
   width: 100%;
-  background-color: red;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   margin-left: auto;
@@ -208,7 +251,6 @@
   display: flex;
   overflow: hidden;
   position: relative;
-<<<<<<< HEAD
 }
 @media (max-width: 540px) {
   .custom-container {
@@ -317,8 +359,6 @@
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 10;
-=======
->>>>>>> c5831338e252569b9f580a548fafadf9cd00bb26
 }
 
 .paralleximg {
@@ -332,22 +372,11 @@
      object-fit: cover; /* Ensures the image covers the container */
 }
 
-<<<<<<< HEAD
-.parallexsec {
-  position: relative;
-  background: #003329;
-  padding: 100px;
-}
-
-.parallex-gradient {
-  background: linear-gradient(to bottom, #003329, #ffffff);
-=======
 .parallextext {
   position: absolute;
   font-size: 5em;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
->>>>>>> c5831338e252569b9f580a548fafadf9cd00bb26
 }
 
 /*!

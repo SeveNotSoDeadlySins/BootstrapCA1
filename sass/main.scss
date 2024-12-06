@@ -5,9 +5,7 @@ $primary: green;
 $gradient: #003329;
 $h2white: #fcfcfc;
 
-.test-class {
-    color: red; // Add a test class to verify compilation
-}
+
 
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -37,7 +35,8 @@ $custom-heights: (
   h-75: 75%,
   h-100: 100%,
   h-900: 950px,
-  h-1084: 1084px
+  h-1084: 1084px,
+  h-350: 350px
 );
 
 @mixin generate-heights($heights) {
@@ -46,8 +45,14 @@ $custom-heights: (
         height: $value;
       }
     }
-  }
+}
 @include generate-heights($custom-heights);
+
+@for $i from 0 through 10 {
+    .top-#{$i * 10} {
+      top: #{$i * 10%};
+    }
+}
 
 $container-max-widths: (
   sm: 540px,
@@ -67,7 +72,6 @@ $container-max-widths: (
 
 @mixin make-container($padding-x: $container-padding-x, $h: auto, $overflow-y: hidden) {
     width: 100%;
-    background-color: red;
     padding-right: $padding-x;
     padding-left: $padding-x;
     margin-left: auto;
@@ -154,9 +158,6 @@ $container-xxl: (
     object-fit: cover; /* Ensures the image covers the container */
 }
 
-.paralleximg {
-    @include make-parallax-img();
-}
 
 @mixin make-parallax-text() {
     position: absolute;
