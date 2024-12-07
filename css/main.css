@@ -208,7 +208,6 @@
   display: flex;
   overflow: hidden;
   position: relative;
-<<<<<<< HEAD
 }
 @media (max-width: 540px) {
   .custom-container {
@@ -317,8 +316,6 @@
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 10;
-=======
->>>>>>> c5831338e252569b9f580a548fafadf9cd00bb26
 }
 
 .paralleximg {
@@ -332,7 +329,6 @@
      object-fit: cover; /* Ensures the image covers the container */
 }
 
-<<<<<<< HEAD
 .parallexsec {
   position: relative;
   background: #003329;
@@ -341,13 +337,6 @@
 
 .parallex-gradient {
   background: linear-gradient(to bottom, #003329, #ffffff);
-=======
-.parallextext {
-  position: absolute;
-  font-size: 5em;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
->>>>>>> c5831338e252569b9f580a548fafadf9cd00bb26
 }
 
 /*!
